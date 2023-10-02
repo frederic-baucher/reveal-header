@@ -3,7 +3,8 @@
 
 :root {
   --header-font-size: max(10px, 1.4vw);
-  --header-font-color: #898E8B;
+  --header-font-color: #FFFFFF  ;  /* customized for q4casi */ /* white for beeing readable on red background */
+  --header-background-color: #e31b17; /* customized for q4casi */  /* red from INSA charter */  
   --header-margin: 0px 0px 0px 0px;
   /*--header-font-family: 'Source Serif 4', serif;*/
 }
@@ -14,6 +15,7 @@
   width: 100%;
   position: fixed;
   z-index: 5;
+  background-color: var(--header-background-color) ; /* customized for q4casi */
   /*font-family: var(--header-font-family);*/
 }
 
