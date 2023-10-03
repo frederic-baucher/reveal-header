@@ -4,6 +4,8 @@ fork of https://github.com/shafayetShafee/reveal-header
 An extension to gather all the config. for writing _revealjs_ slides for INSA-ROUEN.
 This project focus **only** on aesthetic of _revealjs_ slides.
 
+For an equivalent for beamer kwnow-how, see https://github.com/frederic-baucher/beamer-helpers.
+
 ## Install
 > quarto add frederic-baucher/reveal-header
 
