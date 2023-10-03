@@ -1,6 +1,9 @@
 # Reveal-header Extension For Quarto customized for fbab
 fork of https://github.com/shafayetShafee/reveal-header
 
+An extension to gather all the config. for writing _revealjs_ slides for INSA-ROUEN.
+This project focus **only** on aesthetic of _revealjs_ slides.
+
 ## Install
 > quarto add frederic-baucher/reveal-header
 
@@ -29,6 +32,18 @@ filters:
   - reveal-header
 slide-level: 3
 ```yaml
+
+## Color code
+By convention, it is advised to have the following backgroung for sections and sub-sections
+* section: #ee7675 (red insa, opacity 0.6)
+* subsection: #fac577 (orange insa, opacity 0.6)
+
+Example
+```md
+# Section {background="#ee7675"}
+## Subsection {background="#fac577"}
+### Slide
+```
 
 ## Example
 
