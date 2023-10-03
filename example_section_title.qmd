@@ -1,14 +1,37 @@
 ---
 title: "Quarto Presentations"
 subtitle: "Create beautiful interactive slide decks with Reveal.js"
-author: Shafayet Khan Shafee
-date: last-modified
+# author: Shafayet Khan Shafee - https://github.com/shafayetShafee/reveal-header
+#  date: last-modified
 date-format: "DD MMM, YYYY"
+# first slide config.
+title-slide-attributes:
+    data-background-image: _extensions/reveal-header/resources/img/_template_first_slide.png
+    data-background-size: contain
+    data-background-opacity: "0.6"
+    # data-logo: images/blank.svg # not available
+    # data-slide-number: false # not available
 format: 
   revealjs:
+    hide-from-titleSlide: all  
+    # top right (unless logo is empty => bottom right)
     slide-number: true
+    # top middle and left
     sc-sb-title: true
-    logo: images/quarto.png
+    # top left (but not compatible with sc-sb-title)
+    # header-logo: _extensions/reveal-header/resources/reveal_logo.svg
+    # bottom - middle : repeat title
+    footer: reveal-header example
+    # bottom right
+    logo: _extensions/reveal-header/resources/logo/gorilla.64x.png
+    # bottom left
+    # by default, shortcut to the menu
+
+  html:
+    theme:
+      - sass/revealjs-header.scss
+    style:
+      - sass/revealjs-header.css
 filters: 
   - reveal-header
 slide-level: 3
@@ -17,9 +40,13 @@ engine: knitr
 embed-resources: true
 ---
 
-# Section 
+# Section {background="#ee7675"}
+<!--
+section: #ee7675 (red insa, opacity 0.6)
+subsection: #fac577 (orange insa, opacity 0.6)
+-->
 
-## Subsection
+## Subsection {background="#fac577"}
 
 ### TODO
 
